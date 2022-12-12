@@ -5,6 +5,8 @@ import BannerImage from './assets/banner.png'
 import FooterImage from './assets/footer.jpg'
 import Category from './components/Cateogory'
 
+import styles from './styles.module.scss'
+
 function App() {
   return (
     <div className="App">
@@ -12,7 +14,7 @@ function App() {
 
       <Tabs />
 
-      <img src={BannerImage} alt="Banner" />
+      <img className={styles.banner} src={BannerImage} alt="Banner" />
 
       <h2>热门</h2>
       <Category />
