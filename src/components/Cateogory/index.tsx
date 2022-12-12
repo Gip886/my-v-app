@@ -1,11 +1,25 @@
 import React from 'react'
+import { VideoData } from '../../constants/data'
 
-const Category = () => {
+import styles from './styles.module.scss'
+
+interface Props {
+  list: VideoData[]
+}
+
+const Category: React.FC<Props> = (props) => {
+  const { list } = props
+
   return (
-    <ul>
-      <li>1</li>
-      <li>2</li>
-    </ul>
+    <div className={styles.category}>
+      <ul>
+        {list.map((videoData) => (
+          <li key={videoData.id}>
+            <video src={videoData.src} />
+          </li>
+        ))}
+      </ul>
+    </div>
   )
 }
 

@@ -6,28 +6,31 @@ import FooterImage from './assets/footer.jpg'
 import Category from './components/Cateogory'
 
 import styles from './styles.module.scss'
+import { dataSource } from './constants/data'
 
 function App() {
   return (
-    <div className="App">
+    <div className={styles.app}>
       <NavBar />
 
       <Tabs />
 
+      <div className={styles.line}></div>
+
       <img className={styles.banner} src={BannerImage} alt="Banner" />
 
-      <h2>热门</h2>
-      <Category />
+      <h2>{dataSource.hot.title}</h2>
+      <Category list={dataSource.hot.list} />
 
-      <h2>直播</h2>
-      <Category />
+      <h2>{dataSource.live.title}</h2>
+      <Category list={dataSource.live.list} />
 
-      <h2>推荐</h2>
-      <Category />
+      <h2>{dataSource.recommend.title}</h2>
+      <Category list={dataSource.recommend.list} />
 
-      <img src={FooterImage} alt="Footer" />
+      <img className={styles.banner} src={FooterImage} alt="Footer" />
 
-      <footer>
+      <footer className={styles.footer}>
         <span>@Bilibili 2022</span>
       </footer>
     </div>
