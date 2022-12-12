@@ -10,7 +10,7 @@
     transform: translateY(0);
     transition: transform 250ms;
 
-    &.hidden{
+    &.hidden {
       transform: translateY(-56px);
     }
   }
@@ -19,7 +19,7 @@
     margin-top: 20px;
   }
 
-  .content{
+  .content {
     padding: 16px;
   }
 
@@ -35,10 +35,15 @@
   .scrollView {
     height: 100vh;
     overflow: auto;
+
+    .offset {
+      height: calc(2 * 56px);
+    }
   }
 
   .banner {
     width: 100%;
+    object-fit: over;
   }
 
   .footer {

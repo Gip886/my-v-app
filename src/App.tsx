@@ -135,6 +135,7 @@ const App = () => {
 
       <div className={styles.scrollView} onScroll={onScroll}>
         <div ref={offsetRef} className={styles.offset} />
+        
         <img className={styles.banner} src={BannerImage} alt="Banner" />
 
         <div className={styles.content} ref={contentRef}>
