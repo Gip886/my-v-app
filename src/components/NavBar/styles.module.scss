@@ -1,19 +1,16 @@
-.navBar{
-  // position: fixed;
-  top: 0;
-  left: 0;
+.navBar {
+  position: relative;
   width: 100%;
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #fb7299;
-  height: 56px;
 
-  .icon{
+  .icon {
     position: absolute;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
   }
-
 }
