@@ -1,24 +1,24 @@
 .category {
   width: 100%;
-  overflow: hidden;
+  overflow: auto;
 
   ul {
+    padding: 16px 0;
     display: flex;
-    padding: 16px;
 
-    li{
+    li {
       list-style: none;
       margin-right: 16px;
 
-      &:last-child{
+      &:last-child {
         margin-right: 0;
       }
 
-      video{
+      video {
         background: black;
-        height: 240px;
-        width: 136px;
         border-radius: 6px;
+        width: 136px;
+        height: 240px;
       }
     }
   }
